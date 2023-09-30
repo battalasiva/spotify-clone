@@ -28,18 +28,20 @@ function Spotify() {
 
   return (
     <div>
-      {screenWidth <= 350 ? (
-        screenWidth <= 350 && showdiv ? (
+      {screenWidth <= 400 ? (
+        screenWidth <= 400 && showdiv ? (
           <div className="layout">
             <div className="div23">
-            <BsArrowLeftRight className="div23-arrow" onClick={handleshowdiv} />
-            <Navbar />
-            <Body />
-          </div>
-          <div className="footer">
-        <Footer />
-        s
-      </div>
+              <BsArrowLeftRight
+                className="div23-arrow"
+                onClick={handleshowdiv}
+              />
+              <Navbar />
+              <Body />
+            </div>
+            <div className="footer">
+              <Footer />
+            </div>
           </div>
         ) : (
           <div className="layout">
@@ -51,9 +53,8 @@ function Spotify() {
               <Sidebar />
             </div>
             <div className="footer">
-        <Footer />
-        
-      </div>
+              <Footer />
+            </div>
           </div>
         )
       ) : (
@@ -68,17 +69,13 @@ function Spotify() {
             </div>
           </div>
           <div className="footer">
-        <Footer />
-       
-      </div>
+            <Footer />
+          </div>
         </div>
       )}
       <div className="footer">
         <Footer />
-        
       </div>
-     
-      
     </div>
   );
 }
